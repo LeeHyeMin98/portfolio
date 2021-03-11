@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="user">
+	
+	<select id="viewUser" resultType="com.portfolio.project.user.vo.UserVO">
+		SELECT
+			uname AS uname,
+			upw AS upw,
+			uemail AS uemail,
+			uage AS uage,
+			ujob AS ujob
+		FROM USER
+		WHERE uname = #{uname}
+	</select>
+	
+	<update id="updateUser">
+		UPDATE USER
+		SET
+			upw = #{upw},
+			uemail = #{uemail},
+			uage = #{uage},
+			ujob = #{ujob}
+		WHERE
+			uname = #{uname}
+	</update>
+	
+</mapper>
