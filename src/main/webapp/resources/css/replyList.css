@@ -1,0 +1,43 @@
+
+/* 댓글 출력 테이블 설정 */
+.replytab {
+  text-align : left;
+  margin-left : 0px;
+}
+
+/* 댓글 테이블 td 공통 설정 */
+.replytd{
+	font-size : 11px;
+	text-align : left;
+}
+
+/* 댓글 작성자 출력 설정 */
+.replyp {
+	font-weight : bold;
+	font-size : 13px;
+	color : #62C15B;
+	float : left;
+}
+
+/* 댓글 작성자와 해당 작성자의 작성 내용 간의 구분선 */
+.replyhr {
+	border : 1px solid #AAD7A5;
+	width : 700px;
+}
+
+/* 댓글 내용을 출력하는 text 태그 설정 */
+text{
+	float : left;
+}
+
+/* a 태그 공통 설정 */
+a {
+	color : #006700;
+}
+
+
+/* span 태그 공통 설정 */
+span {
+	color : #004600;
+	weight : bold;
+}
